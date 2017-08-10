@@ -16,10 +16,12 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from carparking.views import *
+from blog.views import *
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^carparking/',include('carparking.urls')),
-    url(r'^parkingform/$', AboutPageView.as_view())
+    url(r'^parkingform/$', AboutPageView.as_view()),
+    url(r'^blog/$', include('blog.urls')),
 ]

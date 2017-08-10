@@ -25,7 +25,7 @@ STATIC_URL = 'static/'
 SECRET_KEY = '9^^octepjbq!=5j7*28^t10rp1ash1$qt_@u=np^wq#i^dg556'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 # Redis configurations
